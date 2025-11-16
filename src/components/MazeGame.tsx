@@ -163,8 +163,12 @@ export const MazeGame = () => {
                     </div>
                   )}
                   {isMarcos && hasWon && (
-                    <div className="w-full h-full flex items-center justify-center">
-                      <Heart className="w-6 h-6 text-heart fill-heart animate-bounce" />
+                    <div className="w-full h-full flex items-center justify-center relative">
+                      <div className="text-2xl animate-bounce">💋</div>
+                      <div className="absolute -top-2 -left-2 text-sm animate-ping">💕</div>
+                      <div className="absolute -top-2 -right-2 text-sm animate-ping animation-delay-150">💕</div>
+                      <div className="absolute -bottom-2 -left-2 text-sm animate-ping animation-delay-300">💕</div>
+                      <div className="absolute -bottom-2 -right-2 text-sm animate-ping animation-delay-450">💕</div>
                     </div>
                   )}
                 </div>
@@ -177,13 +181,29 @@ export const MazeGame = () => {
       {/* Win Screen */}
       {hasWon && (
         <div className="absolute inset-0 flex items-center justify-center bg-background/95 backdrop-blur-sm rounded-2xl animate-fade-in z-20">
-          <div className="text-center space-y-6 p-8">
+          <div className="text-center space-y-6 p-8 relative">
+            {/* Floating hearts animation */}
+            <div className="absolute inset-0 pointer-events-none">
+              <div className="absolute top-0 left-1/4 text-2xl animate-float">💕</div>
+              <div className="absolute top-10 right-1/4 text-3xl animate-float animation-delay-300">💖</div>
+              <div className="absolute bottom-20 left-1/3 text-2xl animate-float animation-delay-150">💗</div>
+              <div className="absolute bottom-10 right-1/3 text-3xl animate-float animation-delay-450">💝</div>
+            </div>
+            
+            {/* Main kiss animation */}
+            <div className="flex justify-center gap-4 mb-4 relative">
+              <div className="text-6xl animate-bounce">😘</div>
+              <div className="text-6xl animate-pulse">💋</div>
+              <div className="text-6xl animate-bounce animation-delay-150">😘</div>
+            </div>
+            
             <div className="flex justify-center gap-2 mb-4">
               <Heart className="w-12 h-12 text-heart fill-heart animate-bounce" />
               <Sparkles className="w-12 h-12 text-pastel-yellow animate-pulse" />
-              <Heart className="w-12 h-12 text-heart fill-heart animate-bounce" />
+              <Heart className="w-12 h-12 text-heart fill-heart animate-bounce animation-delay-150" />
             </div>
-            <h2 className="font-handwritten text-5xl text-primary">
+            
+            <h2 className="font-handwritten text-5xl text-primary animate-pulse">
               Eles se beijaram! 💋
             </h2>
             <p className="text-xl text-foreground/80">
