@@ -22,10 +22,10 @@ const Index = () => {
       <div className="relative z-10 container mx-auto px-4 py-12 md:py-20">
         <div className="text-center mb-16">
           <h1 className="font-handwritten text-5xl md:text-7xl text-primary mb-4 animate-fade-in">
-            Querida Amanda... 💕
+            Minha rapunzel... 💕
           </h1>
           <p className="text-xl md:text-2xl text-foreground/80 font-light">
-            Um convite especial do Marcos
+            Um convite especial do teu amor
           </p>
         </div>
 
@@ -41,8 +41,8 @@ const Index = () => {
             </h2>
             <p className="text-lg leading-relaxed text-foreground/90">
               Porque encontros únicos merecem momentos únicos. E um beijo no primeiro encontro 
-              não é precipitação... é conexão, é química, é deixar o coração falar mais alto 
-              que a razão. É ser autêntico e verdadeiro com o que você está sentindo.
+              não é precipitação... é conexão, é química, tu não vai parecer atirada por conta disso, muito pelo contrário
+              eu vou ficar muito feliz, pois a gente iria ficar muito mais próximos, e isso diria muito sobre a nossa conexão
             </p>
           </div>
 
@@ -73,7 +73,7 @@ const Index = () => {
               </div>
               <p className="text-foreground/80 leading-relaxed">
                 Não existe momento perfeito, existe o momento que decidimos tornar perfeito. 
-                Por que esperar se a magia já está acontecendo?
+                Por que esperar se ja nos sentimos confortáveis um com o outro?
               </p>
             </div>
 
@@ -85,8 +85,8 @@ const Index = () => {
                 </h3>
               </div>
               <p className="text-foreground/80 leading-relaxed">
-                O único arrependimento que existe é o de não ter vivido intensamente 
-                quando tivemos a chance. Vamos criar uma memória linda juntos?
+                O único arrependimento que existe é o de não ter aproveitado
+                quando tivemos a chance. Por que não criamos essa memória?
               </p>
             </div>
 
@@ -98,8 +98,8 @@ const Index = () => {
                 </h3>
               </div>
               <p className="text-foreground/80 leading-relaxed">
-                Quando há química, você sente. E quando você sente, por que segurar? 
-                A espontaneidade é o tempero que torna tudo mais especial.
+                Quando há essa conexão você sente, e quando você sente, por que segurar? 
+                (te garanto que eu beijo bem, que o nosso beijo vai ser bom e que tu vai gostar 😂)
               </p>
             </div>
 
@@ -107,12 +107,12 @@ const Index = () => {
               <div className="flex items-center gap-3 mb-4">
                 <Cloud className="w-8 h-8 text-muted-foreground" />
                 <h3 className="font-handwritten text-3xl text-foreground">
-                  Seja você mesma
+                  Tempo
                 </h3>
               </div>
               <p className="text-foreground/80 leading-relaxed">
-                O mais lindo em você é sua autenticidade. Se seu coração está pedindo esse momento, 
-                confie nele. Ele sempre sabe o caminho.
+                Provavelmente irá levar muito tempo até conseguirmos nos ver de novo, por quê não aproveitamos
+                quando finalmente temos a chance, depois de um mês de conversa?
               </p>
             </div>
           </div>
@@ -120,8 +120,8 @@ const Index = () => {
           {/* Quote Section */}
           <div className="bg-primary/10 rounded-3xl p-8 md:p-12 border-2 border-primary/20 text-center">
             <p className="font-handwritten text-3xl md:text-4xl text-primary mb-4 italic">
-              "O beijo é a forma mais sincera de dizer: 'Estou aqui, presente, 
-              me permitindo sentir tudo isso com você.'"
+              "o nosso beijo não vai ser só mais um beijo sem sentimento, vai ser algo muito mais especial que isso,
+              vai marcar o começo da nossa relação, e pra ser bem sincero eu mal posso esperar por isso
             </p>
             <div className="flex justify-center gap-2 mt-6">
               <Heart className="w-5 h-5 text-heart fill-heart" />
@@ -133,17 +133,20 @@ const Index = () => {
           {/* Personal Message */}
           <div className="bg-card rounded-3xl p-8 md:p-12 shadow-xl border-2 border-pastel-blue">
             <h2 className="font-handwritten text-4xl text-primary mb-6 text-center">
-              Uma mensagem sincera do Marcos 💙
+              Uma mensagem sincera 💙
             </h2>
             <p className="text-lg leading-relaxed text-foreground/90 mb-6">
-              Amanda, desde o primeiro momento que conversamos, senti uma conexão especial. 
-              Não quero que esse momento seja apenas mais um encontro comum. Quero que seja 
-              autêntico, verdadeiro, memorável.
+              Desde o primeiro momento, la quando reagi teu story na oktober, te achei meio chatinha mas logo 
+              vi que tu era uma pessoaa incrível , e mesmo com tantas desavenças a gente passou
+              por tudo junto, e nesse tempo eu comecei a gostar de verdade de ti... acho que posso dizer que em um nível
+              que eu nunca gostei de alguém antes
+             
+           
             </p>
             <p className="text-lg leading-relaxed text-foreground/90 mb-6">
-              Não estou pedindo nada além do que você já sente. Se houver aquela faísca, 
-              aquela vontade, aquele frio na barriga... deixa acontecer. Vamos fazer desse 
-              encontro o início de algo que valha a pena lembrar.
+              Não quero forçar ou apressar as coisas, mas se 
+              aquela vontade, aquele frio na barriga... deixa acontecer. Vamos fazer de quinta
+              o início de algo que vai durar muito e que valha a pena lembrar
             </p>
             <p className="text-lg leading-relaxed text-foreground/90 text-center font-semibold">
               E se rolar aquele beijo? Ah, vai ser perfeito. ✨
@@ -181,7 +184,8 @@ const Index = () => {
                       <span className="text-3xl">💕</span>
                     </div>
                     <p className="font-handwritten text-2xl md:text-3xl text-primary leading-relaxed max-w-2xl">
-                      eu quero muito que aconteça, porque isso muda tudo
+                      Eu quero muito que aconteça, porque isso muda tudo, vai mudar totalmente a nossa relação, o sentimento 
+                      que a gente tem... Se ele ja é forte agora, te garanto que depois que a gente ficar esse sentimento só vai aumentar.
                     </p>
                   </div>
                 )}
@@ -198,7 +202,7 @@ const Index = () => {
               tenho algo pra te dizer... 💕
             </button>
             <p className="text-sm text-foreground/60 max-w-md mx-auto">
-              Feito com muito carinho e uma pitada de coragem 💕
+              Feito com muito carinho 💕
             </p>
           </div>
         </div>
