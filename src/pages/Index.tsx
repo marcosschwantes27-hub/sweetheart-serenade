@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background font-body">
+    <div className="min-h-screen bg-background font-body dark">
       {/* Floating hearts animation */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
         <Heart className="absolute top-10 left-10 text-heart w-6 h-6 animate-pulse" />
