@@ -187,7 +187,13 @@ const Index = () => {
           </div>
 
           {/* Footer */}
-          <div className="text-center pb-12">
+          <div className="text-center pb-12 space-y-6">
+            <button
+              onClick={() => window.location.href = '/mensagem'}
+              className="px-8 py-4 bg-gradient-to-r from-heart to-primary text-white rounded-full font-handwritten text-2xl hover:scale-105 transition-transform shadow-lg animate-pulse"
+            >
+              tenho algo pra te dizer... 💕
+            </button>
             <p className="text-sm text-foreground/60 max-w-md mx-auto">
               Feito com muito carinho e uma pitada de coragem 💕
             </p>
