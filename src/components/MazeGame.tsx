@@ -1,6 +1,8 @@
 import { useState, useEffect, useCallback } from "react";
 import { Heart, Sparkles } from "lucide-react";
 import { toast } from "sonner";
+import amandaCharacter from "@/assets/amanda-character.png";
+import marcosCharacter from "@/assets/marcos-character.png";
 
 const MAZE_SIZE = 10;
 
@@ -110,15 +112,11 @@ export const MazeGame = () => {
         </p>
         <div className="flex items-center justify-center gap-4 text-sm">
           <div className="flex items-center gap-2">
-            <div className="w-6 h-6 rounded-full bg-gradient-to-br from-primary to-pastel-pink flex items-center justify-center text-xs font-bold">
-              A
-            </div>
+            <img src={amandaCharacter} alt="Amanda" className="w-8 h-8 object-contain" />
             <span className="text-foreground/70">Amanda</span>
           </div>
           <div className="flex items-center gap-2">
-            <div className="w-6 h-6 rounded-full bg-gradient-to-br from-secondary to-pastel-blue flex items-center justify-center text-xs font-bold">
-              M
-            </div>
+            <img src={marcosCharacter} alt="Marcos" className="w-8 h-8 object-contain" />
             <span className="text-foreground/70">Marcos</span>
           </div>
           <div className="flex items-center gap-2">
@@ -153,13 +151,21 @@ export const MazeGame = () => {
                   `}
                 >
                   {isAmanda && (
-                    <div className="w-full h-full rounded-full bg-gradient-to-br from-primary to-pastel-pink flex items-center justify-center animate-pulse font-bold text-white shadow-lg">
-                      A
+                    <div className="w-full h-full flex items-center justify-center animate-pulse">
+                      <img 
+                        src={amandaCharacter} 
+                        alt="Amanda" 
+                        className="w-full h-full object-contain drop-shadow-lg"
+                      />
                     </div>
                   )}
                   {isMarcos && !hasWon && (
-                    <div className="w-full h-full rounded-full bg-gradient-to-br from-secondary to-pastel-blue flex items-center justify-center animate-pulse font-bold text-foreground shadow-lg">
-                      M
+                    <div className="w-full h-full flex items-center justify-center animate-pulse">
+                      <img 
+                        src={marcosCharacter} 
+                        alt="Marcos" 
+                        className="w-full h-full object-contain drop-shadow-lg"
+                      />
                     </div>
                   )}
                   {isMarcos && hasWon && (
