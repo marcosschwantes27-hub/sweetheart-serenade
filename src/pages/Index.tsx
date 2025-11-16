@@ -1,5 +1,5 @@
 import { Heart, Star, Cloud, Sparkles } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { MazeGame } from "@/components/MazeGame";
 
 const Index = () => {
   return (
@@ -129,16 +129,13 @@ const Index = () => {
             </p>
           </div>
 
-          {/* Final CTA */}
-          <div className="text-center space-y-6 pb-12">
-            <div className="inline-flex items-center gap-3 bg-gradient-to-r from-primary via-pastel-pink to-heart p-8 rounded-full shadow-2xl">
-              <Heart className="w-12 h-12 text-white fill-white animate-pulse" />
-              <span className="font-handwritten text-4xl text-white">
-                Topa viver essa magia comigo?
-              </span>
-              <Heart className="w-12 h-12 text-white fill-white animate-pulse" />
-            </div>
-            
+          {/* Maze Game */}
+          <div className="bg-card rounded-3xl p-8 md:p-12 shadow-xl border-2 border-pastel-pink">
+            <MazeGame />
+          </div>
+
+          {/* Footer */}
+          <div className="text-center pb-12">
             <p className="text-sm text-foreground/60 max-w-md mx-auto">
               Feito com muito carinho e uma pitada de coragem 💕
             </p>
