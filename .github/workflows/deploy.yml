@@ -29,21 +29,8 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Compute base path
-        id: base
-        run: |
-          REPO="${{ github.event.repository.name }}"
-          OWNER="${{ github.repository_owner }}"
-          if [ "$REPO" = "$OWNER.github.io" ]; then
-            echo "base=/" >> $GITHUB_OUTPUT
-          else
-            echo "base=/$REPO/" >> $GITHUB_OUTPUT
-          fi
-
       - name: Build
-        env:
-          VITE_BASE: ${{ steps.base.outputs.base }}
-        run: npm run build -- --base "${{ steps.base.outputs.base }}"
+        run: npm run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
