@@ -46,15 +46,15 @@ const Index = () => {
           </div>
 
           {/* Photo Card */}
-          <div className="bg-card rounded-3xl p-6 md:p-8 shadow-xl border-2 border-pastel-pink animate-fade-in">
+          <div className="bg-card rounded-3xl p-4 md:p-6 shadow-xl border-2 border-pastel-pink animate-fade-in max-w-sm mx-auto">
             <div className="relative overflow-hidden rounded-2xl">
               <img 
                 src={couplePhoto} 
                 alt="Amanda e Marcos" 
                 className="w-full h-auto object-cover"
               />
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-6">
-                <p className="font-handwritten text-2xl md:text-3xl text-white text-center">
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
+                <p className="font-handwritten text-xl md:text-2xl text-white text-center">
                   Amanda & Marcos 💕
                 </p>
               </div>
