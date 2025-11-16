@@ -5,7 +5,6 @@ import couplePhoto from "@/assets/couple-photo.jpeg";
 
 const Index = () => {
   const [showMessage, setShowMessage] = useState(false);
-  const [mazeCompleted, setMazeCompleted] = useState(false);
 
   return (
     <div className="min-h-screen bg-background font-body dark">
@@ -152,7 +151,7 @@ const Index = () => {
 
           {/* Maze Game */}
           <div className="bg-card rounded-3xl p-8 md:p-12 shadow-xl border-2 border-pastel-pink">
-            <MazeGame onComplete={() => setMazeCompleted(true)} />
+            <MazeGame />
             
             {/* Reveal Button */}
             <div className="mt-8 pt-6 border-t border-border/30 text-center">
@@ -187,21 +186,11 @@ const Index = () => {
           {/* Footer */}
           <div className="text-center pb-12 space-y-6">
             <button
-              onClick={() => mazeCompleted && (window.location.href = '/mensagem')}
-              disabled={!mazeCompleted}
-              className={`px-8 py-4 rounded-full font-handwritten text-2xl transition-all shadow-lg ${
-                mazeCompleted 
-                  ? 'bg-gradient-to-r from-heart to-primary text-white hover:scale-105 animate-pulse cursor-pointer' 
-                  : 'bg-muted text-muted-foreground cursor-not-allowed opacity-60'
-              }`}
+              onClick={() => window.location.href = '/mensagem'}
+              className="px-8 py-4 bg-gradient-to-r from-heart to-primary text-white rounded-full font-handwritten text-2xl hover:scale-105 transition-transform shadow-lg animate-pulse"
             >
-              eu quero muito que aconteça, porque isso muda tudo 💕
+              tenho algo pra te dizer... 💕
             </button>
-            {!mazeCompleted && (
-              <p className="text-sm text-foreground/60 animate-pulse">
-                Complete o labirinto para desbloquear a mensagem especial ✨
-              </p>
-            )}
             <p className="text-sm text-foreground/60 max-w-md mx-auto">
               Feito com muito carinho e uma pitada de coragem 💕
             </p>
