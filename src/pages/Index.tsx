@@ -142,11 +142,11 @@ const Index = () => {
               <div className="flex flex-col items-center gap-3">
                 <div className="flex items-center gap-2">
                   {hasCompletedMaze ? (
-                    <Unlock className="w-4 h-4 text-pastel-yellow animate-pulse" />
+                    <Unlock className="w-5 h-5 text-pastel-yellow animate-pulse" />
                   ) : (
-                    <Lock className="w-4 h-4 text-muted-foreground" />
+                    <Lock className="w-5 h-5 text-muted-foreground" />
                   )}
-                  <p className="text-sm font-handwritten text-foreground/70">
+                  <p className="text-lg md:text-xl font-handwritten text-foreground/70">
                     Uma frase especial
                   </p>
                 </div>
