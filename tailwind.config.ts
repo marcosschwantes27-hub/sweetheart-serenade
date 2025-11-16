@@ -57,6 +57,17 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        pastel: {
+          pink: "hsl(var(--pastel-pink))",
+          blue: "hsl(var(--pastel-blue))",
+          yellow: "hsl(var(--pastel-yellow))",
+          mint: "hsl(var(--pastel-mint))",
+        },
+        heart: "hsl(var(--heart-red))",
+      },
+      fontFamily: {
+        handwritten: ['Caveat', 'cursive'],
+        body: ['Quicksand', 'sans-serif'],
       },
       borderRadius: {
         lg: "var(--radius)",
