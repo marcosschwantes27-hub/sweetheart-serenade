@@ -1,7 +1,9 @@
 import { useState } from "react";
-import { Heart, Star, Sparkles, Cloud } from "lucide-react";
+import { Heart, Star, Sparkles, Cloud, ArrowLeft } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const Mensagem = () => {
+  const navigate = useNavigate();
   const [showReveal, setShowReveal] = useState(false);
 
   return (
@@ -23,6 +25,15 @@ const Mensagem = () => {
         <Cloud className="absolute top-16 left-1/3 text-primary/30 w-10 h-10 animate-pulse" style={{ animationDuration: "3s" }} />
         <Cloud className="absolute bottom-24 right-1/4 text-primary/20 w-12 h-12 animate-pulse" style={{ animationDuration: "4s", animationDelay: "1s" }} />
       </div>
+      
+      {/* Back button */}
+      <button
+        onClick={() => navigate('/')}
+        className="fixed top-8 left-8 z-20 flex items-center gap-2 px-4 py-2 bg-card/80 backdrop-blur-sm text-foreground/70 hover:text-foreground rounded-full transition-all hover:scale-105 shadow-lg border border-border/50"
+      >
+        <ArrowLeft className="w-5 h-5" />
+        <span className="font-handwritten text-lg">Voltar</span>
+      </button>
       
       {/* Main content */}
       <div className="flex flex-col items-center gap-8 relative z-10">
