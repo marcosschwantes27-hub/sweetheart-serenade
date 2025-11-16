@@ -1,7 +1,11 @@
-import { Heart, Star, Cloud, Sparkles } from "lucide-react";
+import { useState } from "react";
+import { Heart, Star, Cloud, Sparkles, Lock, Unlock } from "lucide-react";
 import { MazeGame } from "@/components/MazeGame";
 
 const Index = () => {
+  const [hasCompletedMaze, setHasCompletedMaze] = useState(false);
+  const [showSpecialMessage, setShowSpecialMessage] = useState(false);
+
   return (
     <div className="min-h-screen bg-background font-body dark">
       {/* Floating hearts animation */}
@@ -131,7 +135,55 @@ const Index = () => {
 
           {/* Maze Game */}
           <div className="bg-card rounded-3xl p-8 md:p-12 shadow-xl border-2 border-pastel-pink">
-            <MazeGame />
+            <MazeGame onWin={() => setHasCompletedMaze(true)} />
+          </div>
+
+          {/* Special Reveal Button */}
+          <div className="bg-card rounded-3xl p-8 md:p-12 shadow-xl border-2 border-pastel-yellow text-center">
+            <div className="flex flex-col items-center gap-6">
+              <div className="flex items-center gap-3">
+                {hasCompletedMaze ? (
+                  <Unlock className="w-8 h-8 text-pastel-yellow animate-pulse" />
+                ) : (
+                  <Lock className="w-8 h-8 text-muted-foreground" />
+                )}
+                <h3 className="font-handwritten text-3xl text-primary">
+                  Uma frase especial
+                </h3>
+              </div>
+              
+              {!hasCompletedMaze && (
+                <p className="text-foreground/60 text-sm">
+                  🔒 Complete o labirinto para desbloquear
+                </p>
+              )}
+              
+              {hasCompletedMaze && !showSpecialMessage && (
+                <button
+                  onClick={() => setShowSpecialMessage(true)}
+                  className="px-8 py-4 bg-gradient-to-r from-pastel-yellow to-pastel-pink text-foreground rounded-full font-handwritten text-xl hover:scale-105 transition-transform shadow-lg"
+                >
+                  Revelar a frase ✨
+                </button>
+              )}
+              
+              {showSpecialMessage && (
+                <div className="animate-fade-in space-y-4">
+                  <div className="flex justify-center gap-2 mb-4">
+                    <Heart className="w-8 h-8 text-heart fill-heart animate-bounce" />
+                    <Sparkles className="w-8 h-8 text-pastel-yellow animate-pulse" />
+                    <Heart className="w-8 h-8 text-heart fill-heart animate-bounce animation-delay-150" />
+                  </div>
+                  <p className="font-handwritten text-4xl md:text-5xl text-primary leading-relaxed">
+                    "Se você chegou até aqui, é porque algo especial está acontecendo. 
+                    Deixa o coração guiar esse momento... 💕"
+                  </p>
+                  <p className="text-lg text-foreground/80 mt-6">
+                    — Com carinho, Marcos
+                  </p>
+                </div>
+              )}
+            </div>
           </div>
 
           {/* Footer */}
